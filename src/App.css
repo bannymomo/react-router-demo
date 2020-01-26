@@ -1,8 +1,8 @@
 body {
   color: #414679d2;
-  text-align: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 body a {
@@ -17,6 +17,22 @@ body li {
 body ul {
   margin: 0;
   padding: 0;
+  display: block;
+}
+
+button {
+  display: inline-block;
+  margin: 10px 0;
+  width: 150px;
+  height: 30px;
+  background: linear-gradient(90deg, #d9e7ff 0%, #e3ffe7 100%);
+  border-radius: 5px;
+  outline: none;
+}
+
+button:active {
+  color: #030303cc;
+  background: #d9e7ff;
 }
 
 nav {
@@ -64,8 +80,27 @@ nav {
 }
 
 .home-route-content {
-  width: 600px;
+  width: 900px;
   font-size: 0.7em;
+}
+
+.lists {
+  padding-bottom: 20px;
+}
+
+.lists a:hover {
+  color: #030303cc;
+}
+
+.list-detail {
+  padding: 40px;
+  border: rgba(0, 0, 0, 0.144) 1px solid;
+}
+
+p,
+.list {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .tags {
